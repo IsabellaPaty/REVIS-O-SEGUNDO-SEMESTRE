@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagens - Meu Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaf7dc; /* Verde pálido */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #5e9641; /* Verde musgo */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="file"],
+        textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #5e9641; /* Verde musgo */
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #7cbf63; /* Verde mais claro */
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Postagens</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="/postar" method="post">
+            <label for="texto">Texto:</label>
+            <textarea id="texto" name="texto" rows="4" required></textarea>
+
+            <label for="imagem">Imagem:</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+            <button type="submit">Postar</button>
+        </form>
+    </main>
+</body>
+</html>

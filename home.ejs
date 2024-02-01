@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Biologia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7dc; /* Verde pálido */
+            color: #333; /* Cor do texto */
+        }
+
+        header {
+            background-color: #5e9641; /* Verde musgo */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #4c7f3e; /* Tom mais escuro para uma borda sutil */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            background-color: #5e9641; /* Verde musgo */
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #7cbf63; /* Verde mais claro */
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #9edf88; /* Verde mais claro (mais claro ao passar o mouse) */
+        }
+
+        .botoes {
+            display: flex;
+            align-items: center;
+        }
+
+        .cadastro,
+        .login {
+            background-color: #7cbf63; /* Verde mais claro */
+            height: 39px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            padding: 0 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cadastro:hover,
+        .login:hover {
+            background-color: #9edf88; /* Verde mais claro (mais claro ao passar o mouse) */
+        }
+
+        footer {
+            background-color: #5e9641; /* Verde musgo */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Biologia</h1>
+        <nav>
+            <ul>
+                <li><a onclick="postagens()">Postagens</a></li>
+                <li><a onclick="sobre()">Sobre</a></li>
+                <li><a onclick="contato()">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="botoes">
+            <button onclick="login()" class="login">Entrar</button>
+            <button onclick="cadastro()" class="cadastro">Cadastre-se</button>
+        </div>
+    </header>
+
+    <section id="featured-post">
+        <h2>Post em Destaque</h2>
+        <article>
+            <h3>Título do Post</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo vel libero feugiat tincidunt et eget elit.</p>
+            <a href="#">Leia mais</a>
+        </article>
+    </section>
+
+    <section id="latest-posts">
+        <h2>Últimos Posts</h2>
+        <article>
+            <h3>Título do Post 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Leia mais</a>
+        </article>
+        <article>
+            <h3>Título do Post 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Leia mais</a>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function contato() {
+            // Altera a localização (URL) para a nova página
+            window.location.href = "contato";
+        }
+
+        function postagens() {
+            // Altera a localização (URL) para a nova página
+            window.location.href = "postagens";
+        }
+
+        function sobre() {
+            window.location.href = "sobre";
+        }
+
+        function login() {
+            window.location.href = "login";
+        }
+
+        function cadastro() {
+            window.location.href = "cadastro";
+        }
+    </script>
+
+</body>
+</html>
