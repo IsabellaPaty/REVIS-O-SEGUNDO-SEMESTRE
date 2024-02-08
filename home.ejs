@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Biologia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7dc; /* Verde pálido */
+            color: #333; /* Cor do texto */
+        }
+
+        header {
+            background-color: #5e9641; /* Verde musgo */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #4c7f3e; /* Tom mais escuro para uma borda sutil */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            background-color: #5e9641; /* Verde musgo */
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #7cbf63; /* Verde mais claro */
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #9edf88; /* Verde mais claro (mais claro ao passar o mouse) */
+        }
+
+        .botoes {
+            display: flex;
+            align-items: center;
+        }
+
+        .cadastro,
+        .login {
+            background-color: #7cbf63; /* Verde mais claro */
+            height: 39px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            padding: 0 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cadastro:hover,
+        .login:hover {
+            background-color: #9edf88; /* Verde mais claro (mais claro ao passar o mouse) */
+        }
+
+        footer {
+            background-color: #5e9641; /* Verde musgo */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(147, 50, 221, 0.6)),url(bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem 0 3rem;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-inline: 1rem;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.left-nav {
+    display: flex;
+}
+
+.mid-nav a {
+    font-size: 1.25rem;
+}
+
+.right-nav img {
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mid-info {
+    color: white;
+    padding: 10rem 5rem 0 5rem;
+}
+
+.name {
+    font-size: 7rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.name span {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.work {
+    letter-spacing: 7px;
+    font-size: 25px;
+}
+
+.sec-des {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f9fafb;
+    color: rgb(157, 34, 194);
+    display: flex;
+    align-items: center;
+    padding: 9rem 7.5rem;
+    justify-content: space-between;
+}
+
+.sec-des-left {
+    width: 50ch;
+}
+
+.sec-des p {
+    line-height: 2;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #c405ea;
+}
+
+.sec-des img {
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.exp {
+    padding: 10.1rem 7.5rem;
+    background: #0c0909;
+    color: #fff;
+}
+
+.exp h3 {
+    background: #0c0909;
+    color: #fff;
+}
+
+.exp img {
+    border-radius: 10px;
+    width: 30vw;
+}
+
+.exp-left {
+    order: 2;
+}
+
+.contact {
+    padding: 9rem 7.5rem;
+    color: rgb(34, 194, 178);
+}
+
+.contact > p {
+    color: black;
+}
+
+h2 {
+    font-size: 10rem;
+}
+
+.free {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-text1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.email {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+hr {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    color: rgb(34, 61, 194);
+}
+
+footer a {
+    text-decoration: none;
+    padding-inline: 1.25rem;
+    color: rgb(34, 39, 194);
+}
+
+footer p {
+    font-weight: 500;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Biologia</h1>
+        <nav>
+            <ul>
+                <li><a href="postagens">Postagens</a></li>
+                <li><a href="contanto">Sobre</a></li>
+                <li><a href="contanto">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="botoes">
+            <button onclick="login()" class="login">Entrar</button>
+            <button onclick="cadastro()" class="cadastro">Cadastre-se</button>
+        </div>
+    </header>
+
+    <section>
+        <div class="mid-info">
+            <div class="name">Patricão <br>
+                <span>Maria</span>
+            </div>
+            <div class="work">Isabella Maria Assis Patrício</div>
+        </div>
+    </section>
+</div>
+<section class="sec-des" id="about">
+    <div class="sec-des-left">
+        <h3>Sobre Mim</h3>
+        <p>
+           Me chamo Isabella Tenho 17 anos
+        </p>
+    </div>
+    <img src="eu.jpeg">
+</section>
+<section class="sec-des exp" id="experience">
+    <div class="sec-des-left exp-left">
+        <h3>Bidu</h3>
+        <p> Tenho uma cachorro muito legal
+        </p>
+    </div>
+    <img src="bidu.jpeg" alt="A Photo of Nightshade">
+</section>
+
+    <footer>
+        <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function contato() {
+            // Altera a localização (URL) para a nova página
+            window.location.href = "contato";
+        }
+
+        function postagens() {
+            // Altera a localização (URL) para a nova página
+            window.location.href = "postagens";
+        }
+
+        function sobre() {
+            window.location.href = "sobre";
+        }
+
+        function login() {
+            window.location.href = "login";
+        }
+
+        function cadastro() {
+            window.location.href = "cadastro";
+        }
+    </script>
+
+</body>
+</html>
